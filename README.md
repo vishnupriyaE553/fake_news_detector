@@ -1,28 +1,67 @@
-# fake_news_detector
+# 📰 fake_news_detector
 
 # Project Title: Fake News Detection App
 
 # Description:
-I developed a Fake News Detection System using Python, VS Code, and Streamlit. This application allows users to input a news headline or article, and it predicts whether the news is real or fake. The model was trained using a labeled dataset of news articles and employs Natural Language Processing (NLP) techniques such as text preprocessing, tokenization, and TF-IDF vectorization. A machine learning algorithm (like Logistic Regression or PassiveAggressiveClassifier) was then used to classify the news.
+
+A web-based Fake News Detection application that uses Google Gemini API to analyze news text and determine whether it is Real or Fake, without relying on a pre-trained dataset or traditional ML models.
 
 The Streamlit interface provides an easy-to-use and interactive web app where users can paste text, click a button, and instantly get a result indicating the authenticity of the news.
 
-# Tech Stack:
+Fake news spreads rapidly and can mislead people. This project leverages the power of Large Language Models (LLMs) via the Gemini API to intelligently analyze news content and classify it as Fake or Real based on contextual understanding rather than static datasets.
 
-Programming Language: Python
+Unlike conventional machine learning approaches, this system:
 
-Framework: Streamlit
+-Does not use a dataset
+-Does not require model training
+-Uses prompt-based inference through Gemini
+
+# ✨ Features
+
+🔍 Detects fake or real news using Gemini LLM
+
+🧠 Context-aware text analysis
+
+🌐 User-friendly web interface
+
+⚡ Real-time predictions
+
+🧩 No dataset or model training required
+
+# 🛠️ Tech Stack
+
+Python - Programming Language
+
+Streamlit – Web interface
+
+Google Gemini API – News analysis & classification
+
+HTML / CSS – UI styling
 
 IDE: VS Code
 
 Libraries: scikit-learn, pandas, numpy, nltk, and Streamlit
 
-# Key Features:
+# 🚀 How It Works
 
-Real-time fake news detection
+User enters a news article or headline
 
-User-friendly web interface
+The text is sent to the Gemini API
 
-Machine learning-based text classification
+Gemini analyzes credibility, tone, and content
 
-Interactive visualization and clean UI
+The response is parsed and displayed as:
+
+  ✅ Real News
+
+  ❌ Fake News
+
+# ⚠️ Limitations
+
+Predictions depend on Gemini’s interpretation
+
+Requires active internet connection
+
+API usage is subject to rate limits and quota
+
+Not a replacement for professional fact-checking
